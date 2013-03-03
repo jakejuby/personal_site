@@ -1,5 +1,5 @@
 PersonalSite::Application.routes.draw do
-  get "resume/index"
+  get "resume/index", :as => resume
 
   get "home/index"
 
