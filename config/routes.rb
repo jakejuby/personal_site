@@ -1,6 +1,4 @@
 PersonalSite::Application.routes.draw do
-  get "resume/index", :as => 'resume'
-
   get "home/index"
 
   # The priority is based upon order of creation:
