@@ -1,4 +1,4 @@
-esumeconPersonalSite::Application.routes.draw do
+PersonalSite::Application.routes.draw do
   get "resume/index"
 
   get "home/index"
