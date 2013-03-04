@@ -13,4 +13,40 @@
 */
 
 @import "twitter/bootstrap";
-body { padding-top: 60px; }
+
+$header_color:#f9f9f9;
+$site_height: 400px;
+
+body { 
+  padding-top: 60px; 
+  background-image:image-url("black_lozenge.png");
+  color:$header_color;
+  font-family: 'Fenix', serif;
+  font-weight: 400;
+}
+.content-div {
+  background-color: $header_color;
+  color: black;
+  border-radius: 15px;
+  border:2px solid black;
+  padding: 15px;
+  display:inline-block;
+  height: $site_height;
+  width: 92%;
+}
+
+.side-bar {
+  background-color: $header_color;
+  color: black;
+  border-radius: 15px;
+  border:2px solid black;
+  padding: 15px;
+  display:inline-block;
+  height: $site_height;
+  width: 100%;
+}
+
+.little-larger {
+  font-size: 1.25em;
+}
+
