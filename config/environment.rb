@@ -3,5 +3,3 @@ require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
 PersonalSite::Application.initialize!
-
-config.action_mailer.delivery_method = :smtp
