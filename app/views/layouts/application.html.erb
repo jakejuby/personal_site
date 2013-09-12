@@ -20,10 +20,10 @@
         <%= link_to 'Jake Juby', home_path, :class => "brand" %>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Browse Projects" %></li>
-            <li><%= link_to "Resume", '/Resume-10-12.pdf' %></li>
+            <!--<li><%#= link_to "Browse Projects" %></li>-->
+            <li><%= link_to "Resume", '/Resume.pdf' %></li>
             <li><%= link_to "Contact", create_mail_path %></li>
-            <li><%= link_to "Blog" %></li>
+            <!--<li><%#= link_to "Blog" %></li>-->
           </ul>
         </div>
       </div>
@@ -32,11 +32,11 @@
   <div class="row-fluid">
     <div class="span10">
       <% flash.each do |name, msg| %>
-          <div class="fade in alert alert-<%= name == 'alert' ? "error" : "success" %>">
-            <a class="close" data-dismiss="alert" href="#" >&times;</a>
-            <%= content_tag :div, msg, :id => "flash_#{name}" %>
-          </div>
-        <% end %>
+        <div class="fade in alert alert-<%= name == 'alert' ? "error" : "success" %>">
+          <a class="close" data-dismiss="alert" href="#" >&times;</a>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        </div>
+      <% end %>
     </div>
   </div>
   <div class="container">
@@ -49,6 +49,16 @@
       <div class="span3">
         <div class="side-bar">
           <h2>About Me</h2>
+          <p>I'm an active person and I like to participate in activities that excersize my mind and body.  I like to Think about interesting things and talk to interesting people.  I get the most enjoyment from spending time exploring the world with my wife.</p>
+          <h4>Things I don't like very much (but love talking about).</h4>
+          <ul>
+            <li>Politics</li>
+            <li>Most Doctors</li>
+            <li>Academia</li>
+          </ul>
+          <h4>Some links</h4>
+          <%= link_to '@jakejuby', "https://twitter.com/jakejuby" %> | 
+          <%= link_to 'github', "https://github.com/jakejuby" %>
         </div>
       </div>
     </div>
